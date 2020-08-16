@@ -1,0 +1,37 @@
+{
+    "name": "typing-game",
+    "version": "1.0.0",
+    "description": "This is a typing game with JavaScript",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "parcel index.html",
+        "build": "parcel build index.html",
+        "start:lambda": "netlify-lambda serve functions",
+        "build:lambda": "netlify-lambda build functions",
+        "prod": "npm run build; npm run build:lambda"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jamesqquick/Build-a-Typing-Game-with-HTML-CSS-and-JavaScript.git"
+    },
+    "author": "@jamesqquick",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jamesqquick/Build-a-Typing-Game-with-HTML-CSS-and-JavaScript/issues"
+    },
+    "homepage": "https://github.com/jamesqquick/Build-a-Typing-Game-with-HTML-CSS-and-JavaScript#readme",
+    "dependencies": {
+        "@auth0/auth0-spa-js": "^1.6.4",
+        "axios": "^0.19.2",
+        "babel-polyfill": "^6.26.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-jwt": "^5.3.1",
+        "jsonwebtoken": "^8.5.1",
+        "jwks-rsa": "^1.7.0",
+        "netlify-lambda": "^1.6.3",
+        "parcel-bundler": "^1.12.4",
+        "serverless-http": "^2.3.2"
+    }
+}
